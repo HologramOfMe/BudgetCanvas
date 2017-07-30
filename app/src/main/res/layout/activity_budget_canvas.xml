@@ -48,6 +48,7 @@
         android:text="The Other category contains things like Labour, Industrial Relations, Imigration, Disaster Relief and General Revenue Assistance."/>
 
     <Button
+        android:id="@+id/showGraphsButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
