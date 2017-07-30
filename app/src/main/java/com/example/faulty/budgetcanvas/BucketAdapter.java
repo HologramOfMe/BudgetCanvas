@@ -4,7 +4,6 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Adapter;
 import android.widget.BaseAdapter;
 import android.widget.SeekBar;
 import android.widget.TextView;
@@ -71,7 +70,7 @@ public class BucketAdapter extends BaseAdapter {
 
         Bucket bucket = mBuckets.get(position);
 
-        holder.bucketLabelTextView.setText(bucket.getmBucketName());
+        holder.bucketLabelTextView.setText(bucket.getBucketName());
         holder.seekBar.setProgress(50);
 
 
