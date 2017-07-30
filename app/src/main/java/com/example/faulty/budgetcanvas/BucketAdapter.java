@@ -72,7 +72,7 @@ public class BucketAdapter extends BaseAdapter {
         Bucket bucket = mBuckets.get(position);
 
         holder.bucketLabelTextView.setText(bucket.getmBucketName());
-        holder.seekBar.setProgress(5);
+        holder.seekBar.setProgress(50);
 
 
         return convertView;

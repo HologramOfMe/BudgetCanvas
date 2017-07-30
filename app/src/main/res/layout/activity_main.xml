@@ -28,7 +28,8 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/lorem_ipsum"/>
+            android:textSize="16sp"
+            android:text="In Budget Canvas you are able to redesign the Australian Budget the way you want it to be spent. Then get feedback on how your budget design will impact the economy.\n\nFirst Enter the post code for your current residence and click the Begin button.\n\nThen you\'ll be taken to an area where you can express your values in major areas of Government spending. You\'ll do this through the use of sliders./n/nWant to see more spending in a certain area? Push the slider for that spending category to the RIGHT. If you want to see less spending in an area push the slider to the LEFT.\n\nThere are 14 spending areas. Scroll through to see them all.\n\nOnce you are done. Click the View Graphs button to see how you would affect the economy if you were in charge. You can come back to move the sliders again if you think you need to change your mind. It\'s OK to change your mind.\n\nFinally. Once you are satisfied, on the Graphs page, you can send your prefferred budget to all levels of government by pressing Submit."/>
     </ScrollView>
 
     <EditText
