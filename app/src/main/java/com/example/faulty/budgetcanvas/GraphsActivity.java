@@ -14,9 +14,11 @@ public class GraphsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_graphs);
 
+        // Get the intent used to start this activity and extract the user post code
         Intent budgetIntent = getIntent();
         mPostCode = budgetIntent.getStringExtra(MainActivity.POST_CODE_KEY);
 
+        // Set the text view at top of activity using the user entered post code
         TextView postCodeMessageLabel = (TextView) findViewById(R.id.postCodeMessageLabel);
         postCodeMessageLabel.setText("Your Post Code is " + mPostCode);
     }
