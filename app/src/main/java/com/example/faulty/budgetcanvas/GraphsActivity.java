@@ -7,7 +7,7 @@ import android.widget.TextView;
 
 public class GraphsActivity extends AppCompatActivity {
 
-    private int mPostCode;
+    private String mPostCode;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -15,7 +15,7 @@ public class GraphsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_graphs);
 
         Intent budgetIntent = getIntent();
-        mPostCode = budgetIntent.getIntExtra(MainActivity.POST_CODE_KEY, 0);
+        mPostCode = budgetIntent.getStringExtra(MainActivity.POST_CODE_KEY);
 
         TextView postCodeMessageLabel = (TextView) findViewById(R.id.postCodeMessageLabel);
         postCodeMessageLabel.setText("Your Post Code is " + mPostCode);

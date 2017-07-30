@@ -13,7 +13,7 @@ import java.util.ArrayList;
 public class BudgetCanvasActivity extends ListActivity{ //AppCompatActivity
 
     private ArrayList<Bucket> mBuckets = new ArrayList<>();
-    private int mPostCode;
+    private String mPostCode;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,7 +21,7 @@ public class BudgetCanvasActivity extends ListActivity{ //AppCompatActivity
         setContentView(R.layout.activity_budget_canvas);
 
         Intent mainIntnet = getIntent();
-        mPostCode = mainIntnet.getIntExtra(MainActivity.POST_CODE_KEY, 0);
+        mPostCode = mainIntnet.getStringExtra(MainActivity.POST_CODE_KEY);
 
         mBuckets.add(new Bucket("Education"));
         mBuckets.add(new Bucket("Healthcare"));
